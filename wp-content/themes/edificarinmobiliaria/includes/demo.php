@@ -229,19 +229,20 @@ function edificarinmobiliaria_register_meta_boxes( $meta_boxes )
 
 			
 
-			// Superficie
+			// WYSIWYG/RICH TEXT EDITOR
 			array(
-				// Field name - Will be used as label
-				'name'  => __( 'Dirección.', 'edificarinmobiliaria' ),
-				// Field ID, i.e. the meta key
-				'id'    => "edificarinmobiliaria_direccion",
-				// Field description (optional)
-				'desc'  => __( 'Calle, número, ciudad...', 'edificarinmobiliaria' ),
-				'type'  => 'text',
-				// Default value (optional)
-				'std'   => __( '', 'edificarinmobiliaria' ),
-				// CLONES: Add to make the field cloneable (i.e. have multiple value)
-				'clone' => false,
+				'name'    => __( 'WYSIWYG / Rich Text Editor', 'edificarinmobiliaria' ),
+				'id'      => "edificarinmobiliaria_wysiwyg",
+				'type'    => 'wysiwyg',
+				// Set the 'raw' parameter to TRUE to prevent data being passed through wpautop() on save
+				'raw'     => false,
+				'std'     => __( 'Pegar aquí el código del mapa.', 'edificarinmobiliaria' ),
+				// Editor settings, see wp_editor() function: look4wp.com/wp_editor
+				'options' => array(
+					'textarea_rows' => 4,
+					'teeny'         => true,
+					'media_buttons' => false,
+				),
 			),
 
 			/*
