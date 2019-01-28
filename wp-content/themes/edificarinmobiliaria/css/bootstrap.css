@@ -83,17 +83,34 @@ body
 	font-size: 16px;
 	font-family: 'Droid Sans', verdana, sans-serif;
 }
+
 div.span6.elmapa
 {
-	padding: 0.8em 0 0 0;
+	padding: 0;
 	overflow: hidden;
-	width: 510px;
+	width: 100%;
 }
+
+@media all and (min-width: 760px) {
+	div.span6.elmapa
+	{
+		max-width: 50%;
+	}
+}
+@media all and (min-width: 1200px) {
+	div.span6.elmapa
+	{
+		max-width: 60%;
+	}
+}
+
+
 div.span4.formulario
 {
 	margin-left: 0;
 	padding-left: 0;
 }
+
 figure.item
 {
 	margin: 0;
