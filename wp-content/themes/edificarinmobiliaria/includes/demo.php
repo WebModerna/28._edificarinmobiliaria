@@ -228,23 +228,16 @@ function edificarinmobiliaria_register_meta_boxes( $meta_boxes )
 			),
 
 			
-
-			// WYSIWYG/RICH TEXT EDITOR
+			// TEXTAREA
 			array(
-				'name'    => __( 'WYSIWYG / Rich Text Editor', 'edificarinmobiliaria' ),
-				'id'      => "edificarinmobiliaria_wysiwyg",
-				'type'    => 'wysiwyg',
-				// Set the 'raw' parameter to TRUE to prevent data being passed through wpautop() on save
-				'raw'     => false,
-				'std'     => __( 'Pegar aquí el código del mapa.', 'edificarinmobiliaria' ),
-				// Editor settings, see wp_editor() function: look4wp.com/wp_editor
-				'options' => array(
-					'textarea_rows' => 4,
-					'teeny'         => true,
-					'media_buttons' => false,
-				),
+				'name' => __( 'Colocar aquí el código del mapa.', 'edificarinmobiliaria' ),
+				'desc' => __( '', 'edificarinmobiliaria' ),
+				'id'   => "edificarinmobiliaria_meta_mapa",
+				'type' => 'textarea',
+				'cols' => 20,
+				'rows' => 3,
 			),
-
+			
 			/*
 			// Dirección
 			array(

@@ -115,7 +115,11 @@
 </div>
 
 <div class="span6 elmapa pull-right">
-	<?php echo do_shortcode('[codepeople-post-map]');?>
+	<?php
+	// Colocando mapas en forma manual
+	$edificarinmobiliaria_mapa = rwmb_meta( 'edificarinmobiliaria_meta_mapa', '' );
+	echo $edificarinmobiliaria_mapa;
+	;?>
 </div>
 <div class="clearfix"></div>
 <hr />

@@ -221,6 +221,23 @@ function edificarinmobiliaria_register_meta_boxes( $meta_boxes )
 				'step' => 1,
 			),
 
+			// DIVIDER
+			array(
+				'type' => 'divider',
+				'id'   => 'edificarinmobiliaria_4', // Not used, but needed
+			),
+
+			
+			// TEXTAREA
+			array(
+				'name' => __( 'Colocar aquí el código del mapa.', 'edificarinmobiliaria' ),
+				'desc' => __( '', 'edificarinmobiliaria' ),
+				'id'   => "edificarinmobiliaria_meta_mapa",
+				'type' => 'textarea',
+				'cols' => 20,
+				'rows' => 3,
+			),
+
 			/*// Superficie
 			array(
 				'name' => __( 'Cantidad de Ambientes', 'edificarinmobiliaria' ),
