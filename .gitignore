@@ -9,7 +9,10 @@ wp-content/upgrade
 wp-content/uploads/
 wp-content/mu-plugins
 wp-content/wp-cache-config.php
-wp-content/plugins/
+wp-content/plugins/codepeople-post-map
+wp-content/plugins/wordpress-importer
+wp-content/plugins/simple-social*
+wp-content/plugins/mappress*
 wp-content/languages
 
 /.htaccess
