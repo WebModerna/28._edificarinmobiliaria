@@ -14,7 +14,7 @@ wp-content/plugins/simple-social*
 wp-content/plugins/mappress*
 wp-content/plugins/
 wp-content/languages
-wp-content/uploads/wpcf7_captcha
+wp-content/uploads/wpcf7_captcha*
 
 /.htaccess
 /license.txt
