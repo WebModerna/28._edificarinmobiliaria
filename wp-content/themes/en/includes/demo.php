@@ -235,7 +235,7 @@ function edificarinmobiliaria_register_meta_boxes( $meta_boxes )
 				'id'   => "edificarinmobiliaria_meta_mapa",
 				'type' => 'textarea',
 				'cols' => 20,
-				'rows' => 3,
+				'rows' => 10,
 			),
 
 			/*// Superficie
@@ -556,7 +556,6 @@ function edificarinmobiliaria_register_meta_boxes( $meta_boxes )
 	return $meta_boxes;
 };
 
-/*
 // Es para las páginas
 add_filter( 'rwmb_meta_boxes', 'meta_paginas_register_meta_boxes' );
 function meta_paginas_register_meta_boxes( $meta_boxes )
@@ -603,7 +602,17 @@ function meta_paginas_register_meta_boxes( $meta_boxes )
 				'cols' => 20,
 				'rows' => 2,
 			),
+
+		// TEXTAREA
+			array(
+				'name' => __( 'Colocar aquí el código del mapa.', 'edificarinmobiliaria' ),
+				'desc' => __( '', 'edificarinmobiliaria' ),
+				'id'   => "edificarinmobiliaria_meta_mapa2",
+				'type' => 'textarea',
+				'cols' => 20,
+				'rows' => 10,
+			),
 		));
-		*/
-// 	return $meta_boxes;
-// };
+		
+	return $meta_boxes;
+};

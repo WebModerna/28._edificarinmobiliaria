@@ -763,7 +763,7 @@ Botón azul*/
 	}	
 	#productos_home ul li
 	{	
-		height: 550px;
+		/*height: 550px;*/
 	}
 	#productos_home ul li div.thumbnail p
 	{	

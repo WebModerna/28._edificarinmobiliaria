@@ -5,7 +5,9 @@
 * @since edificarinmobiliaria 1.0
 * Template Name: Contact
 */ ?>
-<?php get_header();?>
+<?php get_header();
+$edificarinmobiliaria_meta_mapa2 = rwmb_meta( 'edificarinmobiliaria_meta_mapa2', '' );
+?>
 <!-- El loop de WordPress -->
 <?php if (have_posts()) : while (have_posts()) : the_post();
 get_page($page_id); $page_data = get_page($page_id);?>
@@ -16,7 +18,11 @@ get_page($page_id); $page_data = get_page($page_id);?>
 	<!-- El formulario de contacto -->
 	<div class="formulario span4"><?php echo do_shortcode('[contact-form-7 id="225" title="Contact Form"]');?></div>	
 	<!-- El Mapa de Ubicación de la Inmobiliaria -->
-	<div class="elmapa span6 pull-right"><?php echo do_shortcode('[codepeople-post-map]');?></div>
+	<div class="elmapa span6 pull-right"><?php if( $edificarinmobiliaria_meta_mapa2 )
+	{
+		echo $edificarinmobiliaria_meta_mapa2;
+	}
+	;?></div>
 	<?php endwhile;?>
 	<?php endif;?>
 	<div class="clearfix"></div>

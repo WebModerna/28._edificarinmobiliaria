@@ -761,11 +761,11 @@ ul li
 	}	
 	#productos_home ul li
 	{	
-		height: 550px;
+		/*height: 550px;*/
 	}
 	#productos_home ul li div.thumbnail p
 	{	
-		max-height: 530px;
+		/*max-height: 530px;*/
 	}
 }
 @media (max-width: 980px ) {

@@ -26,8 +26,6 @@ wp-admin
 wp-includes
 wp-*.php
 xml*.php
-.gitattributes
-.gitignore
 
 *.txt
 *.html

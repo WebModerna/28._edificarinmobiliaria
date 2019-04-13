@@ -426,8 +426,8 @@ function relative_url()
       // 'home_url',
       // 'includes_url',
       // 'site_url',
-      'site_option_siteurl',
-      'network_home_url',
+      // 'site_option_siteurl',
+      // 'network_home_url',
       // 'network_site_url',
 
       // debug only filters
