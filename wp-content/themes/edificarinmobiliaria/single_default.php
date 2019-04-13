@@ -23,7 +23,7 @@ $edificarinmobiliaria_precio_dolar = rwmb_meta('edificarinmobiliaria_precio_dola
 		<div class="carousel-inner">
 			<?php $attachID = (get_post_meta( $post->ID, 'custom_imagenrepetible',true));?>
 			<?php //comprobando si hay miniaturas
-				if(has_post_thumbnail()){the_post_thumbnail('custom-thumb-320',array('class'=>'active item'));} else { ?>
+				if(has_post_thumbnail()){the_post_thumbnail('custom-thumb-690',array('class'=>'active item'));} else { ?>
 				<img class="item active" src="<?php echo get_stylesheet_directory_uri();?>/img/thumbnail.jpg" alt="<?php _e('Sin imagen', 'edificarinmobiliaria');?>">
 				<?php };?>
 			<?php if ($attachID !== '') {

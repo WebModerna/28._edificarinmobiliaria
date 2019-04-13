@@ -53,7 +53,7 @@ if (wp_is_mobile()==false) { ?>
 				<div class="thumbnail">
 					<a href="<?php the_permalink();?>">
 						<?php //comprobando si hay miniaturas
-						if(has_post_thumbnail()) { the_post_thumbnail('custom-thumb-320'); } else { ?>
+						if(has_post_thumbnail()) { the_post_thumbnail('custom-thumb-690'); } else { ?>
 						<img class="pull-left" src="<?php echo get_stylesheet_directory_uri();?>/img/thumbnail.jpg" alt="<?php _e('Sin imagen', 'edificarinmobiliaria');?>">
 						<?php };// Fin del enlace de la imágen a la entrada ?>
 					</a>

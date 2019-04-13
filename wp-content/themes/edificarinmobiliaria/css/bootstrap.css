@@ -52,11 +52,11 @@ article ul.media-list li.media a img.media-objet
 }
 article ul li div a img 
 {	
-	padding: 0;
-	max-width: 280px;
-	width: 100%;
-	float:none;
 	display: inline-block;
+	float:none;
+	/*max-width: 280px;*/
+	padding: 0;
+	width: 100%;
 }
 article ul li figure a:hover h3 
 {
@@ -654,7 +654,7 @@ ul li
 #zoom
 {
 	left: 124px;
-	top: 61px;
+	top: 36%;
 }
 #zoom-cerrar
 {
@@ -668,6 +668,10 @@ ul li
 	opacity: 0.8;
 }
 /*====================================== Las clases */
+.carousel-control
+{
+	top: 47%;
+}
 .icomoon
 {
 	text-align: right;
@@ -779,7 +783,7 @@ ul li
 	}
 	#productos_home ul li div.thumbnail p
 	{	
-		max-height: 530px;
+		/*max-height: 530px;*/
 	}
 }
 @media (max-width: 980px ) {
@@ -852,7 +856,6 @@ ul li
 	{
 		float: left;
 		margin: 0 1em 1em 0;
-
 	}
 	#carousel-fancybox
 	{
