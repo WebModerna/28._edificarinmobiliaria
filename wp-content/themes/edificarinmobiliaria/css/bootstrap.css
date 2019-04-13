@@ -367,10 +367,18 @@ ul li
 	max-width: 860px;
 	box-sizing: border-box;
 }
+#productos_home ul
+{
+	display:flex;
+	flex-wrap:wrap;
+	align-items:stretch;
+}
 #productos_home ul li
 {
+	border: 1px solid #eee;
+	border-radius: 2px;
 	margin: 0.5em 0.5em 0.2em 0;
-	min-width: 270px;
+	/*min-width: 270px;*/
 }
 #productos_home ul li a:hover
 {
@@ -381,6 +389,12 @@ ul li
 	margin-bottom: 16px;
 	padding: 8px;
 }
+#productos_home ul li .thumbnail
+{
+	border: none;
+	box-shadow: none;
+}
+
 #sidebar_nav nav ul li a,
 #sidebar_nav2 nav ul li a,
 #traduccion a
@@ -765,7 +779,7 @@ ul li
 	}
 	#productos_home ul li div.thumbnail p
 	{	
-		/*max-height: 530px;*/
+		max-height: 530px;
 	}
 }
 @media (max-width: 980px ) {
