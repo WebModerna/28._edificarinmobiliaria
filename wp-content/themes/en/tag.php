@@ -39,7 +39,8 @@
 				<a href="<?php the_permalink(); ?>"><h4 class="text-center text-success page-header"><?php the_title();?></h4></a>
 				<!-- Los precios -->
 				<div>
-					<?php
+					<?php los_precios();
+					/*
 					// Variables
 					$edificarinmobiliaria_precio = rwmb_meta( 'edificarinmobiliaria_precio', '' );
 					$edificarinmobiliaria_precio_dolar = rwmb_meta('edificarinmobiliaria_precio_dolar', '');
@@ -67,7 +68,7 @@
 						echo '$ ';
 						echo __('Consultar', 'edificarinmobiliaria');
 						echo '</span>';
-					};?>
+					};*/?>
 					<br><br>
 				<?php the_excerpt();?>
 				<p class="text-right"><a href="<?php the_permalink(); ?>" class="btn btn-success"><?php _e('Ver más...', 'edificarinmobiliaria');?></a></p>

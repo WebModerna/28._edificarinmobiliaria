@@ -5,12 +5,7 @@
 * @since edificarinmobiliaria 1.0
 */
 ?>
-<?php get_header();
-
-// variables
-$edificarinmobiliaria_precio = rwmb_meta( 'edificarinmobiliaria_precio', '' );
-$edificarinmobiliaria_precio_dolar = rwmb_meta('edificarinmobiliaria_precio_dolar', '');
-?>
+<?php get_header();?>
 <?php //Compruebo si es o no un móvil
 if (wp_is_mobile()==false) { ?>
 <div id="myCarousel" class="carousel slide">
@@ -67,7 +62,8 @@ if (wp_is_mobile()==false) { ?>
 				<!-- Los precios -->
 				<div>
 					<?php
-
+						los_precios();
+					/*
 					// Variables
 					$edificarinmobiliaria_precio = rwmb_meta( 'edificarinmobiliaria_precio', '' );
 					$edificarinmobiliaria_precio_dolar = rwmb_meta('edificarinmobiliaria_precio_dolar', '');
@@ -95,7 +91,7 @@ if (wp_is_mobile()==false) { ?>
 						echo '$ ';
 						echo __('Consultar', 'edificarinmobiliaria');
 						echo '</span>';
-					};?>
+					}*/?>
 					<br><br>
 				</div>
 				<?php the_excerpt();?>

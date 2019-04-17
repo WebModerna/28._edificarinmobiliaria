@@ -77,8 +77,8 @@
 	<!--Fin del pseudo Fancybox-->
 					<!-- Los precios -->
 				<div>
-					<?php
-
+					<?php los_precios();
+					/*
 					// Variables
 					$edificarinmobiliaria_precio = rwmb_meta( 'edificarinmobiliaria_precio', '' );
 					$edificarinmobiliaria_precio_dolar = rwmb_meta('edificarinmobiliaria_precio_dolar', '');
@@ -106,7 +106,7 @@
 						echo '$ ';
 						echo __('Consultar', 'edificarinmobiliaria');
 						echo '</span>';
-					};?>
+					};*/?>
 					<br><br>
 				</div>
 <?php the_content();?>

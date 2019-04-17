@@ -5,6 +5,40 @@
 * @since edificarinmobiliaria 1.0
 */
 
+// Los precios de las propiedades. Es sólo una prueba.
+function los_precios()
+{
+	// Las variables
+	$edificarinmobiliaria_precio = rwmb_meta( 'edificarinmobiliaria_precio', '' );
+	$edificarinmobiliaria_precio_dolar = rwmb_meta('edificarinmobiliaria_precio_dolar', '');
+
+	if( $edificarinmobiliaria_precio )
+	{
+		echo '<span class="label label-warning">';
+		echo __('Precio: ', 'edificarinmobiliaria');
+		echo '$ ';
+		echo $edificarinmobiliaria_precio;
+		echo '</span>';
+	}
+	else if( $edificarinmobiliaria_precio_dolar )
+	{
+		echo '<span class="label label-warning">';
+		echo __('Precio: ', 'edificarinmobiliaria');
+		echo 'U$s ';
+		echo $edificarinmobiliaria_precio_dolar;
+		echo '</span>';
+	}
+	else
+	{
+		echo '<span class="label label-warning">';
+		echo __('Precio: ', 'edificarinmobiliaria');
+		echo '$ ';
+		echo __('Consultar', 'edificarinmobiliaria');
+		echo '</span>';
+	};
+}
+
+
 // Deshabilitar Iconos Emoji
 remove_action('wp_head', 'print_emoji_detection_script', 7);
 remove_action('wp_print_styles', 'print_emoji_styles');
