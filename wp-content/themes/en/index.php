@@ -60,24 +60,25 @@ if (wp_is_mobile()==false) { ?>
 				<a href="<?php the_permalink(); ?>"><h4 class="text-center text-success page-header"><?php the_title();?></h4></a>
 				<!-- Los precios -->
 				<div>
-					<?php
-					$villabrochero_precio = rwmb_meta( 'villabrochero_precio', '' );
-					$villabrochero_precio_dolar = rwmb_meta('villabrochero_precio_dolar', '');
+					<?php					
+					// Variables
+					$edificarinmobiliaria_precio = rwmb_meta( 'edificarinmobiliaria_precio', '' );
+					$edificarinmobiliaria_precio_dolar = rwmb_meta('edificarinmobiliaria_precio_dolar', '');
 					
-					if( $villabrochero_precio )
+					if( $edificarinmobiliaria_precio )
 					{
 						echo '<span class="label label-warning">';
 						echo __('Precio: ', 'edificarinmobiliaria');
 						echo '$ ';
-						echo $villabrochero_precio;
+						echo $edificarinmobiliaria_precio;
 						echo '</span>';
 					}
-					else if( $villabrochero_precio_dolar )
+					else if( $edificarinmobiliaria_precio_dolar )
 					{
 						echo '<span class="label label-warning">';
 						echo __('Precio: ', 'edificarinmobiliaria');
 						echo 'U$s ';
-						echo $villabrochero_precio_dolar;
+						echo $edificarinmobiliaria_precio_dolar;
 						echo '</span>';
 					}
 					else

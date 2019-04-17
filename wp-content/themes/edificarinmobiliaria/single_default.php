@@ -5,8 +5,6 @@
 * @since edificarinmobiliaria 1.0
 */
 
-$edificarinmobiliaria_precio = rwmb_meta( 'edificarinmobiliaria_precio', '' );
-$edificarinmobiliaria_precio_dolar = rwmb_meta('edificarinmobiliaria_precio_dolar', '');
 ?>
 <?php get_header();?>
 <!-- El loop de WordPress -->
@@ -80,6 +78,10 @@ $edificarinmobiliaria_precio_dolar = rwmb_meta('edificarinmobiliaria_precio_dola
 					<!-- Los precios -->
 				<div>
 					<?php
+
+					// Variables
+					$edificarinmobiliaria_precio = rwmb_meta( 'edificarinmobiliaria_precio', '' );
+					$edificarinmobiliaria_precio_dolar = rwmb_meta('edificarinmobiliaria_precio_dolar', '');
 										
 					if( $edificarinmobiliaria_precio )
 					{

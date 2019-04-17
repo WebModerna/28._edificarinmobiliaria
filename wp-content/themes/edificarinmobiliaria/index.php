@@ -5,7 +5,12 @@
 * @since edificarinmobiliaria 1.0
 */
 ?>
-<?php get_header();?>
+<?php get_header();
+
+// variables
+$edificarinmobiliaria_precio = rwmb_meta( 'edificarinmobiliaria_precio', '' );
+$edificarinmobiliaria_precio_dolar = rwmb_meta('edificarinmobiliaria_precio_dolar', '');
+?>
 <?php //Compruebo si es o no un móvil
 if (wp_is_mobile()==false) { ?>
 <div id="myCarousel" class="carousel slide">
@@ -62,23 +67,25 @@ if (wp_is_mobile()==false) { ?>
 				<!-- Los precios -->
 				<div>
 					<?php
-					$villabrochero_precio = rwmb_meta( 'villabrochero_precio', '' );
-					$villabrochero_precio_dolar = rwmb_meta('villabrochero_precio_dolar', '');
+
+					// Variables
+					$edificarinmobiliaria_precio = rwmb_meta( 'edificarinmobiliaria_precio', '' );
+					$edificarinmobiliaria_precio_dolar = rwmb_meta('edificarinmobiliaria_precio_dolar', '');
 					
-					if( $villabrochero_precio )
+					if( $edificarinmobiliaria_precio )
 					{
 						echo '<span class="label label-warning">';
 						echo __('Precio: ', 'edificarinmobiliaria');
 						echo '$ ';
-						echo $villabrochero_precio;
+						echo $edificarinmobiliaria_precio;
 						echo '</span>';
 					}
-					else if( $villabrochero_precio_dolar )
+					else if( $edificarinmobiliaria_precio_dolar )
 					{
 						echo '<span class="label label-warning">';
 						echo __('Precio: ', 'edificarinmobiliaria');
 						echo 'U$s ';
-						echo $villabrochero_precio_dolar;
+						echo $edificarinmobiliaria_precio_dolar;
 						echo '</span>';
 					}
 					else

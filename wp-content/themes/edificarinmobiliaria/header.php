@@ -5,11 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 <meta name="description" content="<?php bloginfo('description');?>" />
 <meta name="keywords" content="inmobiliaria, Mina Clavero, Villa Cura Brochero, Nono, Panaholma, Arroyo de los Patos, San Lorenzo, Los Hornillos, Traslasierra, compra, venta, alquiler, campos, casas, chacras, terrenos, lotes, hoteles, cabañas, complejos, departamentos" />
-<?php if (is_home()) {?>
+<?php if ( is_home() ) {?>
 <title><?php bloginfo('name');?> | <?php _e('Tu inmobiliaria en Traslasierra', 'edificarinmobiliaria');?></title>
+
+<?php } elseif ( is_category() ) {?>
+	<title><?php printf( __( '%s', 'edificarinmobiliaria' ), single_cat_title( '', false ) ); ?> - <?php bloginfo('name');?></title>
+
 <?php } else { ?> 
 <title><?php the_title();?> | <?php bloginfo('name');?></title>
 <?php };?>
+
 <?php //include 'bootstrap.php';?>
 <link href="<?php echo get_stylesheet_directory_uri();?>/css/bootstrap.css" rel="stylesheet" media="all">
 <?php if (wp_is_mobile()==false) { ?>
